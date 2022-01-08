@@ -9,11 +9,13 @@ import UploadIcon from '/public/icons/icon-upload.svg';
 const Fylo = () => {
     return (
         <div className={styles.fylo}>
-            <Link href={'/'}>
-                <a aria-label={'fylo'}>
-                    <Logo className={styles.logo} />
-                </a>
-            </Link>
+            <h1>
+                <Link href={'/'}>
+                    <a aria-label={'fylo'}>
+                        <Logo className={styles.logo} />
+                    </a>
+                </Link>
+            </h1>
             <ul className={styles.iconContainer}>
                 <li className={styles.iconItem}>
                     <DocumentIcon />
