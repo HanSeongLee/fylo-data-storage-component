@@ -1,7 +1,6 @@
 import React from "react";
 import styles from './style.module.scss';
 import Link from 'next/link';
-import Logo from '/public/logo.svg';
 import DocumentIcon from '/public/icons/icon-document.svg';
 import FolderIcon from '/public/icons/icon-folder.svg';
 import UploadIcon from '/public/icons/icon-upload.svg';
@@ -9,10 +8,13 @@ import UploadIcon from '/public/icons/icon-upload.svg';
 const Fylo = () => {
     return (
         <div className={styles.fylo}>
-            <h1 aria-label={'fylo'}>
+            <h1>
                 <Link href={'/'}>
                     <a aria-label={'fylo'}>
-                        <Logo className={styles.logo} />
+                        <img className={styles.logo}
+                             src={'/logo.svg'}
+                             alt={'fylo'}
+                        />
                     </a>
                 </Link>
             </h1>
